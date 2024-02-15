@@ -1,0 +1,33 @@
+{
+  "name": "Knowledgehub Dev Container",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  // "customizations": {
+  //   "vscode": {
+  //     "settings": {
+  //       "terminal.integrated.shell.linux": "/bin/bash",
+  //       "python.pythonPath": "/usr/local/bin/python",
+  //       "python.autoComplete.extraPaths": ["/workspace"],
+  //       "python.envFile": "/workspace/.env",
+  //       "locale": "en"
+  //     },
+  //     "extensions": [
+  //     "ms-python.python",
+  //     "nhoizey.gremlins",
+  //     "streetsidesoftware.code-spell-checker",
+  //     "ms-toolsai.jupyter",
+  //     "visualstudioexptteam.vscodeintellicode",
+  //     "esbenp.prettier-vscode",
+  //     "GitHub.copilot",
+  //     "GitHub.copilot-chat",
+  //     "ms-azuretools.vscode-docker",
+  //     "qwtel.sqlite-viewer",
+  //     "johnpapa.vscode-peacock",
+  //     "bierner.github-markdown-preview",
+  //     "github.vscode-pull-request-github"
+  //   ]
+  //   }
+  // },
+  "postCreateCommand": "sh ./.devcontainer/post_create_command.sh"
+}
