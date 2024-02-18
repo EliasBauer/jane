@@ -1,11 +1,21 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { render } from 'react-dom';
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
-export default function App() {
+import Layout from './components/Layout.jsx';
+import Home from './pages/Home.jsx';
+import NotFound from './pages/NotFound.jsx';
+
+function App() {
   return (
-    <div>
-      <h1>Hello, world!</h1>
-    </div>
+    <BrowserRouter>
+        <Routes>
+            <Route path="/" element={<Layout />}>
+                <Route index element={<Home />} />
+            </Route>
+            <Route path="*" element={<NotFound />} />
+        </Routes>
+    </BrowserRouter>
   );
 }
 
