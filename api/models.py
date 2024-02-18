@@ -28,9 +28,8 @@ class Debtor(models.Model):
     contact_two = models.CharField(max_length=100, null=True, blank=True)
     account_number = models.CharField(max_length=100)
     balance = models.DecimalField(max_digits=10, decimal_places=2, default=0.00)
+    date = models.DateField(auto_now_add=True)
     last_payment = models.DateField(auto_now=True)
-
-    date = models.DateField()
 
     def __str__(self):
         return self.name
