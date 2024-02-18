@@ -1,0 +1,14 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "node": "16" // changed from 10 -> 16
+        }
+      }
+    ],
+    "@babel/preset-react"
+  ],
+  "plugins": ["@babel/plugin-transform-class-properties"] // changed from "transform-class-properties" -> "@babel/plugin-transform-class-properties"
+}
