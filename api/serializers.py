@@ -1,4 +1,5 @@
 # Takes the model and converts it into JSON format
+
 from rest_framework import serializers
 
 from .models import Creditor, Debtor
