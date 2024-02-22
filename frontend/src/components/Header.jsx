@@ -8,10 +8,6 @@ export default function Header() {
         color: "#161616"
     }
 
-    function fakeLogOut() {
-        localStorage.removeItem("loggedin")
-    }
-
     return (
         <header>
             <h1>This is the header</h1>
